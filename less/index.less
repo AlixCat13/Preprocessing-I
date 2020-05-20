@@ -48,13 +48,77 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+/* Set every element's box-sizing to border-box */	 
+	@filler: #87CEFA;
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
-	
+	width: 80%;
+	margin-left: 10%;
+	font-family: 'Montserrat', sans-serif;	
+	align-content: center;
+}
+
+header nav {
+	width: 100%;
+	border: 3px solid red;
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	background: @filler;
+	font-size: 1.4rem;
+	justify-content: space-evenly;	
+	margin-bottom: 2%;
+}
+
+.Intro {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid purple;
+	background: #E0FFFF;
+	font-size: 1.2rem;
+
+	img {
+		border: 3px solid yellow;
+		width: 30%;
+		height: 30%;
+		margin-bottom: 2%;
+	}
+}
+
+.Middle-Content {
+	border: 2px solid blue;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 3% auto;
+
+		h2 {
+			font-size: 1.4rem;
+		}
+
+		.hire-me {
+			width: 40px;
+		}
+}
+
+
+
+
+
+
+footer nav {
+	width: 100%;
+	border: 1px solid red;
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	background: @filler;
+	font-size: 1.4rem;
+	justify-content: space-evenly;
 }
 
