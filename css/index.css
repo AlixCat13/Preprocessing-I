@@ -130,7 +130,6 @@ table {
 * {
   box-sizing: border-box;
 }
-
 html,
 body {
   height: 100%;
@@ -150,11 +149,11 @@ header nav {
   margin-bottom: 3%;
   margin-top: 3%;
 }
-header nav header nav :hover {
+header nav :hover {
   font-family: 'Balsamiq Sans', cursive;
 }
 @media (max-width: 500px) {
-  header nav header nav {
+  header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -162,32 +161,32 @@ header nav header nav :hover {
     margin-bottom: 3%;
   }
 }
-header nav .Intro {
+.Intro {
   display: flex;
   flex-direction: column;
   background: #E0FFFF;
   font-size: 1.2rem;
   margin-bottom: 3%;
 }
-header nav .Intro img {
+.Intro img {
   width: 30%;
   height: 30%;
   margin-bottom: 3%;
 }
-header nav .Intro h1 {
+.Intro h1 {
   font-size: 2rem;
   margin-bottom: 3%;
 }
-header nav .Intro .motto {
+.Intro .motto {
   font-size: 1.4rem;
   font-style: italic;
   margin-bottom: 3%;
 }
-header nav .Intro p {
+.Intro p {
   font-size: 1rem;
   margin-bottom: 3%;
 }
-header nav .Intro button {
+.Intro button {
   background: #87CEFA;
   width: 150px;
   height: 50px;
@@ -195,71 +194,71 @@ header nav .Intro button {
   border-radius: 20px;
   font-size: 1rem;
 }
-header nav .Intro button :hover {
+.Intro button :hover {
   font-family: 'Balsamiq Sans', cursive;
   font-size: 1.4rem;
 }
 @media (max-width: 500px) {
-  header nav .Intro .Intro {
+  .Intro {
     width: 125%;
     flex-wrap: wrap;
     align-items: center;
   }
-  header nav .Intro .Intro h1 {
+  .Intro h1 {
     margin: 4%;
     font-size: 1.4rem;
     flex-wrap: wrap;
     text-align: center;
   }
-  header nav .Intro .Intro .motto {
+  .Intro .motto {
     font-size: 1.2rem;
   }
-  header nav .Intro .Intro img {
+  .Intro img {
     margin-top: 3%;
   }
-  header nav .Intro .Intro p {
+  .Intro p {
     font-size: 1rem;
   }
-  header nav .Intro .Intro button {
+  .Intro button {
     margin-left: 20%;
     margin-bottom: 3%;
   }
 }
-header nav .Intro .Middle-Content {
+.Middle-Content {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3%;
 }
-header nav .Intro .Middle-Content h2 {
+.Middle-Content h2 {
   font-size: 1.4rem;
 }
-header nav .Intro .Middle-Content .Hire-Me {
+.Middle-Content .Hire-Me {
   width: 40%;
   line-height: 25px;
 }
-header nav .Intro .Middle-Content .Skills h2 {
+.Middle-Content .Skills h2 {
   font-size: 1.4rem;
   margin-bottom: 3%;
 }
-header nav .Intro .Middle-Content .Skills ul {
+.Middle-Content .Skills ul {
   list-style-type: square;
   line-height: 20px;
   margin-left: 40px;
 }
 @media (max-width: 500px) {
-  header nav .Intro .Middle-Content .Middle-Content {
+  .Middle-Content {
     display: flex;
     flex-direction: column;
     margin-bottom: 3%;
     align-items: center;
     width: 125%;
   }
-  header nav .Intro .Middle-Content .Hire-Me {
+  .Hire-Me {
     margin-left: 5%;
     margin-bottom: 3%;
   }
 }
-header nav table {
+table {
   font-family: 'Montserrat', sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -267,25 +266,25 @@ header nav table {
   border: 2px solid #6495ED;
 }
 @media (max-width: 500px) {
-  header nav table table {
+  table {
     font-size: 1rem;
   }
 }
-header nav th {
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
   font-weight: bold;
 }
-header nav td {
+td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-header nav tr:nth-child(even) {
+tr:nth-child(even) {
   background-color: #dddddd;
 }
-header nav .Contact {
+.Contact {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -295,11 +294,11 @@ header nav .Contact {
   justify-content: space-evenly;
   margin-bottom: 3%;
 }
-header nav .Contact .Contact :hover {
+.Contact :hover {
   font-family: 'Balsamiq Sans', cursive;
 }
 @media (max-width: 500px) {
-  header nav .Contact .Contact {
+  .Contact {
     display: flex;
     flex-direction: column;
     text-align: center;
