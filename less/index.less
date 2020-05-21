@@ -50,9 +50,15 @@ table {
 
 /* Set every element's box-sizing to border-box */	 
 	@filler: #87CEFA;
+	@spacing: 3%;
 
 * {
     box-sizing: border-box;
+}
+
+.flex-box {
+	display: flex;
+	flex-direction: row;
 }
 
 html, body {
@@ -65,60 +71,128 @@ html, body {
 
 header nav {
 	width: 100%;
-	border: 3px solid red;
-	display: flex;
-	flex-direction: row;
+	.flex-box ();
 	text-decoration: none;
 	background: @filler;
 	font-size: 1.4rem;
 	justify-content: space-evenly;	
-	margin-bottom: 2%;
+	margin-bottom: @spacing
+}
+
+header nav :hover {
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 .Intro {
 	display: flex;
 	flex-direction: column;
-	border: 3px solid purple;
 	background: #E0FFFF;
 	font-size: 1.2rem;
+	margin-bottom: @spacing;
 
 	img {
-		border: 3px solid yellow;
 		width: 30%;
 		height: 30%;
-		margin-bottom: 2%;
+		margin-bottom: @spacing;
+	}
+
+	h1 {
+		font-size: 2rem;
+		margin-bottom: @spacing;
+	}
+
+	.motto {
+		font-size: 1.4rem;
+		font-style: italic;
+		margin-bottom: @spacing;
+	}
+
+	p {
+		font-size: 1rem;
+		margin-bottom: @spacing;
+	}
+
+	button {
+		background: @filler;
+		width: 150px;
+		height: 50px;
+		border: 2px solid grey;
+		border-radius: 20px;
+		font-size: 1rem;
+	}
+
+	button :hover {
+		font-family: 'Balsamiq Sans', cursive;
+		font-size: 1.4rem;
 	}
 }
 
+	
+
+
 .Middle-Content {
-	border: 2px solid blue;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	margin: 3% auto;
+	display: flex;	
+    justify-content: space-evenly;
+    margin-bottom: @spacing;
 
 		h2 {
 			font-size: 1.4rem;
 		}
 
-		.hire-me {
-			width: 40px;
+		.Hire-Me {			
+			width: 40%;
+			line-height: 25px;
+		}
+
+		.Skills {					
+			h2 {
+				font-size: 1.4rem;
+				margin-bottom: @spacing;
+			}			
+		
+			ul {
+				list-style-type: square;
+				line-height: 20px;
+				margin-left: 40px;
+			}
 		}
 }
 
+table {
+	font-family: 'Montserrat', sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: @spacing;
+	border: 2px solid #6495ED;
+  }
 
-
-
-
+  th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	font-weight: bold;
+  }
+  
+  td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
 
 footer nav {
 	width: 100%;
-	border: 1px solid red;
-	display: flex;
-	flex-direction: row;
+	.flex-box();
 	text-decoration: none;
 	background: @filler;
 	font-size: 1.4rem;
 	justify-content: space-evenly;
+}
+
+footer nav :hover {
+	font-family: 'Balsamiq Sans', cursive;
 }
 
