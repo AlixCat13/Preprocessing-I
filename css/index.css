@@ -153,35 +153,44 @@ header nav {
   margin-bottom: 3%;
   margin-top: 3%;
 }
-header nav :hover {
+header nav header nav :hover {
   font-family: 'Balsamiq Sans', cursive;
 }
-.Intro {
+@media (max-width: 500px) {
+  header nav header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 125%;
+    margin-bottom: 3%;
+  }
+}
+header nav .Intro {
   display: flex;
   flex-direction: column;
   background: #E0FFFF;
   font-size: 1.2rem;
   margin-bottom: 3%;
 }
-.Intro img {
+header nav .Intro img {
   width: 30%;
   height: 30%;
   margin-bottom: 3%;
 }
-.Intro h1 {
+header nav .Intro h1 {
   font-size: 2rem;
   margin-bottom: 3%;
 }
-.Intro .motto {
+header nav .Intro .motto {
   font-size: 1.4rem;
   font-style: italic;
   margin-bottom: 3%;
 }
-.Intro p {
+header nav .Intro p {
   font-size: 1rem;
   margin-bottom: 3%;
 }
-.Intro button {
+header nav .Intro button {
   background: #87CEFA;
   width: 150px;
   height: 50px;
@@ -189,53 +198,97 @@ header nav :hover {
   border-radius: 20px;
   font-size: 1rem;
 }
-.Intro button :hover {
+header nav .Intro button :hover {
   font-family: 'Balsamiq Sans', cursive;
   font-size: 1.4rem;
 }
-.Middle-Content {
+@media (max-width: 500px) {
+  header nav .Intro .Intro {
+    width: 125%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  header nav .Intro .Intro h1 {
+    margin: 4%;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  header nav .Intro .Intro .motto {
+    font-size: 1.2rem;
+  }
+  header nav .Intro .Intro img {
+    margin-top: 3%;
+  }
+  header nav .Intro .Intro p {
+    font-size: 1rem;
+  }
+  header nav .Intro .Intro button {
+    margin-left: 20%;
+    margin-bottom: 3%;
+  }
+}
+header nav .Intro .Middle-Content {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3%;
 }
-.Middle-Content h2 {
+header nav .Intro .Middle-Content h2 {
   font-size: 1.4rem;
 }
-.Middle-Content .Hire-Me {
+header nav .Intro .Middle-Content .Hire-Me {
   width: 40%;
   line-height: 25px;
 }
-.Middle-Content .Skills h2 {
+header nav .Intro .Middle-Content .Skills h2 {
   font-size: 1.4rem;
   margin-bottom: 3%;
 }
-.Middle-Content .Skills ul {
+header nav .Intro .Middle-Content .Skills ul {
   list-style-type: square;
   line-height: 20px;
   margin-left: 40px;
 }
-table {
+@media (max-width: 500px) {
+  header nav .Intro .Middle-Content .Middle-Content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    align-items: center;
+    width: 125%;
+  }
+  header nav .Intro .Middle-Content .Hire-Me {
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+}
+header nav table {
   font-family: 'Montserrat', sans-serif;
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 3%;
   border: 2px solid #6495ED;
 }
-th {
+@media (max-width: 500px) {
+  header nav table table {
+    font-size: 1rem;
+  }
+}
+header nav th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
   font-weight: bold;
 }
-td {
+header nav td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-tr:nth-child(even) {
+header nav tr:nth-child(even) {
   background-color: #dddddd;
 }
-.Contact {
+header nav .Contact {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -245,56 +298,11 @@ tr:nth-child(even) {
   justify-content: space-evenly;
   margin-bottom: 3%;
 }
-.Contact :hover {
+header nav .Contact .Contact :hover {
   font-family: 'Balsamiq Sans', cursive;
 }
 @media (max-width: 500px) {
-  header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 125%;
-    margin-bottom: 3%;
-  }
-  .Intro {
-    width: 125%;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .Intro h1 {
-    margin: 4%;
-    font-size: 1.4rem;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .Intro .motto {
-    font-size: 1.2rem;
-  }
-  .Intro img {
-    margin-top: 3%;
-  }
-  .Intro p {
-    font-size: 1rem;
-  }
-  .Intro button {
-    margin-left: 20%;
-    margin-bottom: 3%;
-  }
-  table {
-    font-size: 1rem;
-  }
-  .Middle-Content {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3%;
-    align-items: center;
-    width: 125%;
-  }
-  .Middle-Content .Hire-Me {
-    margin-left: 5%;
-    margin-bottom: 3%;
-  }
-  .Contact {
+  header nav .Contact .Contact {
     display: flex;
     flex-direction: column;
     text-align: center;
