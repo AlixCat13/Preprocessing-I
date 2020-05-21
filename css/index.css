@@ -151,6 +151,7 @@ header nav {
   font-size: 1.4rem;
   justify-content: space-evenly;
   margin-bottom: 3%;
+  margin-top: 3%;
 }
 header nav :hover {
   font-family: 'Balsamiq Sans', cursive;
@@ -234,7 +235,7 @@ td {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-footer nav {
+.Contact {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -242,7 +243,61 @@ footer nav {
   background: #87CEFA;
   font-size: 1.4rem;
   justify-content: space-evenly;
+  margin-bottom: 3%;
 }
-footer nav :hover {
+.Contact :hover {
   font-family: 'Balsamiq Sans', cursive;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 125%;
+    margin-bottom: 3%;
+  }
+  .Intro {
+    width: 125%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .Intro h1 {
+    margin: 4%;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .Intro .motto {
+    font-size: 1.2rem;
+  }
+  .Intro img {
+    margin-top: 3%;
+  }
+  .Intro p {
+    font-size: 1rem;
+  }
+  .Intro button {
+    margin-left: 20%;
+    margin-bottom: 3%;
+  }
+  table {
+    font-size: 1rem;
+  }
+  .Middle-Content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    align-items: center;
+    width: 125%;
+  }
+  .Middle-Content .Hire-Me {
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 125%;
+  }
 }

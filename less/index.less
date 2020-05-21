@@ -51,6 +51,7 @@ table {
 /* Set every element's box-sizing to border-box */	 
 	@filler: #87CEFA;
 	@spacing: 3%;
+	@width-media: 125%;
 
 * {
     box-sizing: border-box;
@@ -76,8 +77,9 @@ header nav {
 	background: @filler;
 	font-size: 1.4rem;
 	justify-content: space-evenly;	
-	margin-bottom: @spacing
-}
+	margin-bottom: @spacing;
+	margin-top: @spacing;
+	}
 
 header nav :hover {
 	font-family: 'Balsamiq Sans', cursive;
@@ -126,9 +128,6 @@ header nav :hover {
 		font-size: 1.4rem;
 	}
 }
-
-	
-
 
 .Middle-Content {
 	display: flex;	
@@ -183,16 +182,83 @@ table {
 	background-color: #dddddd;
   }
 
-footer nav {
+.Contact {
 	width: 100%;
 	.flex-box();
 	text-decoration: none;
 	background: @filler;
 	font-size: 1.4rem;
 	justify-content: space-evenly;
+	margin-bottom: @spacing;	
 }
 
-footer nav :hover {
+.Contact :hover {
 	font-family: 'Balsamiq Sans', cursive;
+}
+
+@media (max-width: 500px) {
+	header nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: @width-media;
+		margin-bottom: @spacing;
+	 }
+
+	.Intro {
+		width: @width-media;
+		flex-wrap: wrap;
+		align-items: center;
+
+			h1{
+				margin: 4%;
+				font-size: 1.4rem;
+				flex-wrap: wrap;
+				text-align: center;
+			}
+
+			.motto {
+				font-size: 1.2rem;
+			}
+
+			img {
+				margin-top: @spacing;
+			}
+
+			p{
+				font-size: 1rem;
+			}
+
+			button {
+				margin-left: 20%;
+				margin-bottom: @spacing;
+			}
+	 	}
+
+	table {
+			font-size: 1rem;
+		}
+
+	 .Middle-Content {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: @spacing;
+		align-items: center;
+		width: @width-media;		
+
+			.Hire-Me{
+				margin-left: 5%;
+				margin-bottom: @spacing;
+			}
+	 }
+
+	 .Contact {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: @width-media;
+		
+	 }
+
 }
 
